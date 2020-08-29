@@ -89,8 +89,7 @@ footer {
 }
 
 .responsive-img {
-  max-width: 100%;
-  max-height: 100%;  
+  max-width: 80%; 
 }
 
 .titleContainer {
