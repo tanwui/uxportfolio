@@ -1,9 +1,13 @@
 
 
+div {
+  display: block;
+}
+
 
 #nav {
   font-size: 9.5pt;
-
+  padding-top: 0.5em;
  }
 
 
@@ -13,8 +17,7 @@
     top: 75px;
     left: 3px;
     width: 10vw;
-    height: 100%;
-    
+    height: 100%;    
     
   }
 
@@ -44,18 +47,20 @@
 h1{
     font-family: 'Open Sans', sans-serif;  
     font-size: 60pt;    
-    display: block;
 }
 
 h2{
   font-family: 'Open Sans', sans-serif;  
   font-size: 34pt; 
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 h3{
   font-family: 'Open Sans', sans-serif;  
   font-size: 21pt;    
- 
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 h4{
@@ -64,6 +69,11 @@ h4{
 
 }
 
+.projectTitle {
+  font-size: 4.5em;
+  line-height: 1.125em;
+  font-weight:bold;
+}
 
 
 p{
@@ -91,12 +101,57 @@ footer {
 .responsive-img {
   max-width: 100%; 
   height: auto;
+  display: block;
 }
 
 .titleContainer {
-  position: relative;
-  height: 35em;
+  position: static;
+  max-height: 95vh;
+  
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  justify-content: center;
 }
+
+
+.div-block-15 {
+  max-width: 960px;
+  padding-right: 20px;
+  padding-bottom: 4rem;
+  padding-top: 20%;
+  padding-left: 20px;
+  color: #fff;
+
+  }
+
+
+  @media screen and (max-width: 576px) {
+  .projectTitle {
+      font-size: 1.65em;}
+
+  iframe {
+    width:90vw; 
+    height:50vh;
+
+  }
+  
+ 
+  @media screen and (max-width: 768px){
+  .projectTitle {
+      font-size: 2.75em;}
+
+  iframe {
+    width:90vw; 
+    height:50vh;
+  }
+  
+  @media screen and (max-width: 992px){
+  .projectTitle {
+      font-size: 3.25em;
+  }
+
+
 
 .centered {
   position: absolute;
@@ -111,18 +166,17 @@ footer {
 }
 
 
-.div-block-15 {
-  max-width: 960px;
-  padding-right: 20px;
-  padding-bottom: 4rem;
-  padding-left: 20px;
-  color: #fff;
+.fullWidth {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  transform: translate(0%, -60%);
+  
+  text-align: left; 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em ;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
 }
 
-.opener-image.jka {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.55), hsla(0, 0%, 100%, 0) 72%), url(https://tanwui.github.io/uxportfolio//img/Laneway/LanewayMockup.png);
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-attachment: scroll, scroll;
-  justify-content: center;
-}
+
