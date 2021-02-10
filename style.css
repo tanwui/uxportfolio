@@ -104,6 +104,14 @@ footer {
   display: block;
 }
 
+
+.thick-grey-border {
+  border-color: #F4F6F7;
+  border-width: 5px;
+  border-style: solid;
+  border-radius:250px;
+}
+
 .titleContainer {
   position: static;
   max-height: 95vh;
